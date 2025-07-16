@@ -31,4 +31,8 @@ public class IfElseMystery1 {
 
 TODO: Write output here
 
+12 21
+5 6
+6 5
+7 11
 Then, click the green play button to check your work. */

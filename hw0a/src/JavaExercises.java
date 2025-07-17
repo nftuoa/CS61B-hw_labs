@@ -5,6 +5,8 @@
  *
  * @author Erik Kizior
  */
+
+
 public class JavaExercises {
 
     /**
@@ -13,6 +15,11 @@ public class JavaExercises {
      */
     public static void starTriangle() {
         // TODO: Fill in this function
+        String stars = "*";
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(stars);
+            stars=stars+"*";
+        }
     }
 
     /**
@@ -20,7 +27,13 @@ public class JavaExercises {
      * Example: printIndexed("hello") -> h4e3l2l1o0
      */
     public static void printIndexed(String s) {
-        // TODO: Fill in this function
+        int length = s.length();
+        for(int i = 0; i < length; i++){
+            System.out.print(s.charAt(i)+String.valueOf(length-i-1));
+
+        }
+        System.out.println();
+
     }
 
     /**
@@ -29,7 +42,14 @@ public class JavaExercises {
      */
     public static String stutter(String s) {
         // TODO: Fill in this function
-        return null;
+        int length = s.length();
+        String result = "";
+        for(int i = 0; i < length; i++){
+            result=result+s.charAt(i);
+            result=result+s.charAt(i);
+
+        }
+        return result;
     }
 
     /**
@@ -42,8 +62,18 @@ public class JavaExercises {
      *   0 if the point lies on an axis.
      */
     public static int quadrant(int x, int y) {
-        // TODO: Fill in this function
-        return 0;
+        if(x<0 && y<0 ){
+            return 3;
+        }
+        else if(x<0 && y>0){
+            return 2;
+        }
+        else if(x>0 && y>0){
+            return 1;
+        }
+        else {
+            return 4;
+        }
     }
 
     public static void main(String[] args) {

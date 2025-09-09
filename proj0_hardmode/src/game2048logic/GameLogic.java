@@ -22,6 +22,7 @@ public class GameLogic {
             // code in this method. You will want to write
             // helper methods. And those helper methods should
             // have helper methods.
+
             return;
         } else if (side == Side.EAST) {
             return;
